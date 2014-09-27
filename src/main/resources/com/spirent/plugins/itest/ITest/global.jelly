@@ -1,0 +1,46 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler"
+ xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson"  xmlns:f="/lib/form">
+
+	<f:section title="iTest">
+		<f:entry field="cliPath" title="iTestCLI path"> 
+	 		<f:textbox /> 
+	 	</f:entry> 
+	 	<f:entry field="rtPath" title="iTestRT path">
+			<f:textbox /> 
+		</f:entry> 
+		<f:validateButton title="${%Verify Paths}" progress="${%Testing...}" method="testExecutablePath" with="cliPath,rtPath" />
+		<f:entry field="lsIPAddress" title="License Server">
+			<f:textbox /> 
+		</f:entry>
+		<f:entry field="lsPort" title="Port Number">
+			<f:textbox /> 
+		</f:entry> 
+		<f:validateButton title="${%Test Connection}" progress="${%Testing...}" method="testLicenseServerConnection" with="lsIPAddress,lsPort" />
+
+		<f:advanced title="Test Report Database (optional)">
+			<f:entry field="dbName" title="Database Name"> 
+				<f:textbox /> 
+			</f:entry> 
+			<f:entry field="dbType" name="dbType" title="Database Type" >
+  				<f:select /> 
+			</f:entry>
+			<f:entry field="dbUsername" title="User ID"> 
+				<f:textbox /> 
+			</f:entry> 
+			<f:entry field="dbPassword" title="Password"> 
+				<f:password /> 
+			</f:entry>
+			<f:entry field="dbIPAddress" title="Database Host"> 
+				<f:textbox /> 
+			</f:entry> 
+			<f:entry field="dbPort" title="Port"> 
+				<f:textbox /> 
+			</f:entry> 
+			<f:entry field="dbURI" title="URI"> 
+				<f:textbox /> 
+			</f:entry> 
+			<f:validateButton title="${%Test Connection}" progress="${%Testing...}" method="testConnection" with="dbName,dbType,dbUsername,dbPassword,dbURI,dbIPAddress,dbPort" />
+		</f:advanced>
+	</f:section> 
+</j:jelly>

@@ -1,0 +1,7 @@
+# Track ~/src, README and pom.xml files only. 
+
+.classpath
+.settings
+target
+work
+.project

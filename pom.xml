@@ -1,0 +1,70 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>org.jenkins-ci.plugins</groupId>
+    <artifactId>plugin</artifactId>
+    <version>1.570</version>
+  </parent>
+
+  <scm>
+    <connection>scm:git:ssh://github.com/Spirent/Spirent-iTest-Jenkins-Plugin.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/Spirent/Spirent-iTest-Jenkins-Plugin.git</developerConnection>
+    <url>https://github.com/Spirent/Spirent-iTest-Jenkins-Plugin</url>
+  </scm>
+
+  <artifactId>itest</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>hpi</packaging>
+  <name>Spirent iTest Plugin</name>
+  <description>Adds Spirent iTest support to Jenkins</description> 
+  <url>https://wiki.jenkins-ci.org/display/JENKINS/Spirent+iTest+Plugin</url>
+
+  <properties>
+    <maven.compiler.source>1.5</maven.compiler.source>
+    <maven.compiler.target>1.5</maven.compiler.target>
+  </properties>
+
+  <licenses>
+    <license>
+      <name>MIT License</name>
+      <url>http://opensource.org/licenses/MIT</url>
+    </license>
+  </licenses>
+
+  <repositories>
+    <repository>
+      <id>repo.jenkins-ci.org</id>
+      <url>http://repo.jenkins-ci.org/public/</url>
+    </repository>
+  </repositories>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>repo.jenkins-ci.org</id>
+      <url>http://repo.jenkins-ci.org/public/</url>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <dependencies>  
+    <dependency> 
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.31</version>
+    </dependency>
+    <dependency> 
+      <groupId>org.postgresql</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>9.3-1102-jdbc41</version>
+    </dependency>
+  </dependencies>
+
+  <developers>
+    <developer>
+      <id>marchornbeek</id>
+      <name>Marc Hornbeek</name>
+      <email>dl-vct@spirent.com</email>
+    </developer>
+  </developers>
+</project>
+  

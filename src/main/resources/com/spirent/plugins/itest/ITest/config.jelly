@@ -1,0 +1,32 @@
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+
+	<f:section>
+		<f:entry field="workspace" title="iTest Workspace">
+			<f:textbox />
+		</f:entry>
+		<f:entry field="projects" title="Name of project">
+			<f:textbox />
+		</f:entry>
+		<f:entry field="testcases" title="Test cases">  
+			<f:textbox />       
+		</f:entry>
+		<f:entry field="testbed" title="Testbed/topology" > 
+			<f:textbox /> 
+		</f:entry> 
+		<f:entry field="paramFile" title="Parameter file" > 
+			<f:textbox /> 
+		</f:entry>
+		<f:entry field="params" title="Parameters" >
+			<f:textbox /> 
+		</f:entry> 
+		<f:entry field="testReportRequired" title="Generate test report?">
+			<f:checkbox />
+		</f:entry>
+		<f:entry field="dbCustomTag" title="Custom tag" > 
+			<f:textbox /> 
+		</f:entry> 
+	</f:section> 
+</j:jelly>
+
+
+

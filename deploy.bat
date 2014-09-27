@@ -1,0 +1,1 @@
+mvn clean install hpi:run -DskipTests 

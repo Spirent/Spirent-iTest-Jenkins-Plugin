@@ -1,4 +1,15 @@
-Spirent-iTest-Jenkins-Plugin
-============================
+itest-plugin
+============
 
-Spirent-iTest-Jenkins-Plugin Public Code Repository for the Spirent iTest Jenkins Plugin - https://wiki.jenkins-ci.org/display/JENKINS/Spirent+iTest+Plugin
+The iTest Plugin for Jenkins CI
+
+============
+
+Run the following command within this directory to generate Eclipse .project files
+
+mvn -DdownloadSources=true -DdownloadJavadocs=true 
+-DoutputDirectory=target/eclipse-classes eclipse:eclipse
+
+============
+
+Run deploy.bat to build and deploy the plugin to Jenkins. 
