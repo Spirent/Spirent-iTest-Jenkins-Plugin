@@ -14,7 +14,7 @@
   </scm>
 
   <artifactId>itest</artifactId>
-  <version>1.1-SNAPSHOT</version>
+  <version>1.0-SNAPSHOT</version>
   <packaging>hpi</packaging>
   <name>Spirent iTest Plugin</name>
   <description>Adds Spirent iTest support to Jenkins</description> 
