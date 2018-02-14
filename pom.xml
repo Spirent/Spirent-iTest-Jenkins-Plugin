@@ -4,7 +4,7 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <version>1.570</version>
+    <version>2.11</version>
   </parent>
 
   <scm>
@@ -14,7 +14,7 @@
     <tag>HEAD</tag>
   </scm>
 
-  <artifactId>itest</artifactId>
+  <artifactId>https://github.com/ci/itest</artifactId>
   <version>1.1-SNAPSHOT</version>
   <packaging>hpi</packaging>
   <name>Spirent iTest Plugin</name>
