@@ -14,7 +14,7 @@
     <tag>HEAD</tag>
   </scm>
 
-  <artifactId>https://github.com/ci/itest</artifactId>
+  <artifactId>itest</artifactId>
   <version>1.1-SNAPSHOT</version>
   <packaging>hpi</packaging>
   <name>Spirent iTest Plugin</name>
